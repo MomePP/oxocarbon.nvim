@@ -94,6 +94,7 @@
                       :none :NONE}))
 
 (local pumblend (vim.opt.pumblend:get))
+(local winblend (vim.opt.winblend:get))
 
 ;; --- Palette extension ---
 (tset oxocarbon :pink "#f38ba8")
@@ -119,28 +120,28 @@
 (custom-set-face! :NoiceFormatEvent [] {:fg oxocarbon.orange})
 (custom-set-face! :NoiceFormatKind [] {:fg oxocarbon.green})
 
-(custom-set-face! :SnacksPicker [] {:bg oxocarbon.float_bg})
-(custom-set-face! :SnacksPickerBorder [] {:bg oxocarbon.float_bg})
-(custom-set-face! :SnacksPickerTitle [] {:fg oxocarbon.float_bg :bg oxocarbon.base12 :bold true})
-(custom-set-face! :SnacksPickerPreview [] {:bg oxocarbon.base00})
-(custom-set-face! :SnacksPickerPreviewBorder [] {:bg oxocarbon.base00})
-(custom-set-face! :SnacksPickerPreviewTitle [] {:fg oxocarbon.base00 :bg oxocarbon.base10 :bold true})
+(custom-set-face! :SnacksPicker [] {:bg oxocarbon.float_bg :blend winblend})
+(custom-set-face! :SnacksPickerBorder [] {:bg oxocarbon.float_bg :blend winblend})
+(custom-set-face! :SnacksPickerTitle [:bold] {:fg oxocarbon.float_bg :bg oxocarbon.base12 :blend winblend})
+(custom-set-face! :SnacksPickerPreview [] {:bg oxocarbon.base00 :blend winblend})
+(custom-set-face! :SnacksPickerPreviewBorder [] {:bg oxocarbon.base00 :blend winblend})
+(custom-set-face! :SnacksPickerPreviewTitle [:bold] {:fg oxocarbon.base00 :bg oxocarbon.base10 :blend winblend})
 (custom-set-face! :SnacksPickerDir [] {:fg oxocarbon.base03})
 (custom-set-face! :SnacksPickerTotals [] {:fg oxocarbon.base03})
 (custom-set-face! :SnacksPickerSelected [] {:fg oxocarbon.orange})
-(custom-set-face! :SnacksPickerMatch [] {:fg oxocarbon.base12 :bold true})
+(custom-set-face! :SnacksPickerMatch [:bold] {:fg oxocarbon.base12})
 (custom-set-face! :SnacksTerminalNormal [] {:bg oxocarbon.none})
 (custom-set-face! :SnacksTerminalBorder [] {:link "SnacksTerminalNormal"})
-(custom-set-face! :SnacksTerminalFooter [] {:fg oxocarbon.base10 :bg oxocarbon.none :bold true})
+(custom-set-face! :SnacksTerminalFooter [:bold] {:fg oxocarbon.base10 :bg oxocarbon.none})
 
-(custom-set-face! :OilTitle [] {:fg oxocarbon.base00 :bg oxocarbon.base12 :bold true})
+(custom-set-face! :OilTitle [:bold] {:fg oxocarbon.base00 :bg oxocarbon.base12})
 (custom-set-face! :OilPreviewNormal [] {:bg oxocarbon.base00})
 (custom-set-face! :OilPreviewBorder [] {:bg oxocarbon.base00})
-(custom-set-face! :OilPreviewTitle [] {:fg oxocarbon.base00 :bg oxocarbon.base10 :bold true})
+(custom-set-face! :OilPreviewTitle [:bold] {:fg oxocarbon.base00 :bg oxocarbon.base10})
 
 (custom-set-face! :LeapBackdrop [] {:fg oxocarbon.base03 :bg oxocarbon.none})
-(custom-set-face! :LeapLabel [] {:fg oxocarbon.periwinkle :bold true :nocombine true})
-(custom-set-face! :LeapMatch [] {:fg oxocarbon.base04 :bold true :nocombine true})
+(custom-set-face! :LeapLabel [:bold :nocombine] {:fg oxocarbon.periwinkle})
+(custom-set-face! :LeapMatch [:bold :nocombine] {:fg oxocarbon.base04})
 
 (custom-set-face! :RainbowDelimiterRed [] {:fg oxocarbon.base10})
 (custom-set-face! :RainbowDelimiterBlue [] {:fg oxocarbon.base11})
@@ -150,7 +151,7 @@
 (custom-set-face! :RainbowDelimiterOrange [] {:fg oxocarbon.orange})
 (custom-set-face! :RainbowDelimiterViolet [] {:fg oxocarbon.base14})
 
-(custom-set-face! :TreesitterContext [] {:bg oxocarbon.none :bold true :blend 0})
+(custom-set-face! :TreesitterContext [:bold] {:bg oxocarbon.none :blend 0})
 (custom-set-face! :TreesitterContextLineNumber [] {:link "TreesitterContext"})
 
 (custom-set-face! :HlSearchLens [] {:link "PmenuSel"})
