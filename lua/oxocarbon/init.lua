@@ -10,6 +10,59 @@ local base00 = "#161616"
 local base06 = "#ffffff"
 local base09 = "#78a9ff"
 local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.3), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#08bdba", base08 = "#3ddbd9", base09 = base09, base10 = "#ee5396", base11 = "#33b1ff", base12 = "#ff7eb6", base13 = "#42be65", base14 = "#be95ff", base15 = "#82cfff", blend = "#131313", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#37474F", base05 = "#90A4AE", base06 = "#525252", base07 = "#08bdba", base08 = "#ff7eb6", base09 = "#ee5396", base10 = "#FF6F00", base11 = "#0f62fe", base12 = "#673AB7", base13 = "#42be65", base14 = "#be95ff", base15 = "#FFAB91", blend = "#FAFAFA", none = "NONE"})
+local pumblend = vim.opt.pumblend:get()
+local winblend = vim.opt.winblend:get()
+oxocarbon["pink"] = "#f38ba8"
+oxocarbon["orange"] = "#f9b387"
+oxocarbon["yellow"] = "#f9e2af"
+oxocarbon["green"] = "#a6e3a1"
+oxocarbon["blue"] = "#74c7ec"
+oxocarbon["periwinkle"] = "#b4befe"
+oxocarbon["lavender"] = "#cba6f7"
+oxocarbon["float_bg"] = "#232323"
+oxocarbon["ghost"] = "#808080"
+vim.api.nvim_set_hl(0, "InclineNormal", {fg = oxocarbon.base04, bg = oxocarbon.none, blend = 0})
+vim.api.nvim_set_hl(0, "InclineNormalNC", {fg = oxocarbon.base03, bg = oxocarbon.none, blend = 0})
+vim.api.nvim_set_hl(0, "NoiceCmdlineIconCmdline", {link = "lualine_a_command"})
+vim.api.nvim_set_hl(0, "NoiceCmdlineIconSearch", {link = "lualine_a_command"})
+vim.api.nvim_set_hl(0, "NoiceCmdlineIconFilter", {link = "lualine_a_command"})
+vim.api.nvim_set_hl(0, "NoiceSplit", {link = "Normal"})
+vim.api.nvim_set_hl(0, "NoiceSplitBorder", {link = "NoiceSplit"})
+vim.api.nvim_set_hl(0, "NoiceFormatDate", {fg = oxocarbon.pink})
+vim.api.nvim_set_hl(0, "NoiceFormatEvent", {fg = oxocarbon.orange})
+vim.api.nvim_set_hl(0, "NoiceFormatKind", {fg = oxocarbon.green})
+vim.api.nvim_set_hl(0, "SnacksPicker", {bg = oxocarbon.float_bg, blend = winblend})
+vim.api.nvim_set_hl(0, "SnacksPickerBorder", {bg = oxocarbon.float_bg, blend = winblend})
+vim.api.nvim_set_hl(0, "SnacksPickerTitle", {fg = oxocarbon.float_bg, bg = oxocarbon.base12, blend = winblend, bold = true})
+vim.api.nvim_set_hl(0, "SnacksPickerPreview", {bg = oxocarbon.base00, blend = winblend})
+vim.api.nvim_set_hl(0, "SnacksPickerPreviewBorder", {bg = oxocarbon.base00, blend = winblend})
+vim.api.nvim_set_hl(0, "SnacksPickerPreviewTitle", {fg = oxocarbon.base00, bg = oxocarbon.base10, blend = winblend, bold = true})
+vim.api.nvim_set_hl(0, "SnacksPickerDir", {fg = oxocarbon.base03})
+vim.api.nvim_set_hl(0, "SnacksPickerTotals", {fg = oxocarbon.base03})
+vim.api.nvim_set_hl(0, "SnacksPickerSelected", {fg = oxocarbon.orange})
+vim.api.nvim_set_hl(0, "SnacksPickerMatch", {fg = oxocarbon.base12, bold = true})
+vim.api.nvim_set_hl(0, "SnacksTerminalNormal", {bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "SnacksTerminalBorder", {link = "SnacksTerminalNormal"})
+vim.api.nvim_set_hl(0, "SnacksTerminalFooter", {fg = oxocarbon.base10, bg = oxocarbon.none, bold = true})
+vim.api.nvim_set_hl(0, "OilTitle", {fg = oxocarbon.base00, bg = oxocarbon.base12, bold = true})
+vim.api.nvim_set_hl(0, "OilPreviewNormal", {bg = oxocarbon.base00})
+vim.api.nvim_set_hl(0, "OilPreviewBorder", {bg = oxocarbon.base00})
+vim.api.nvim_set_hl(0, "OilPreviewTitle", {fg = oxocarbon.base00, bg = oxocarbon.base10, bold = true})
+vim.api.nvim_set_hl(0, "LeapBackdrop", {fg = oxocarbon.base03, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "LeapLabel", {fg = oxocarbon.periwinkle, bold = true, nocombine = true})
+vim.api.nvim_set_hl(0, "LeapMatch", {fg = oxocarbon.base04, bold = true, nocombine = true})
+vim.api.nvim_set_hl(0, "RainbowDelimiterRed", {fg = oxocarbon.base10})
+vim.api.nvim_set_hl(0, "RainbowDelimiterBlue", {fg = oxocarbon.base11})
+vim.api.nvim_set_hl(0, "RainbowDelimiterCyan", {fg = oxocarbon.base08})
+vim.api.nvim_set_hl(0, "RainbowDelimiterGreen", {fg = oxocarbon.base13})
+vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", {fg = oxocarbon.yellow})
+vim.api.nvim_set_hl(0, "RainbowDelimiterOrange", {fg = oxocarbon.orange})
+vim.api.nvim_set_hl(0, "RainbowDelimiterViolet", {fg = oxocarbon.base14})
+vim.api.nvim_set_hl(0, "TreesitterContext", {bg = oxocarbon.none, blend = 0, bold = true})
+vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", {link = "TreesitterContext"})
+vim.api.nvim_set_hl(0, "HlSearchLens", {link = "PmenuSel"})
+vim.api.nvim_set_hl(0, "MarkSignHL", {fg = oxocarbon.blue})
+vim.api.nvim_set_hl(0, "MiniSurround", {link = "MatchParen"})
 vim.g["terminal_color_0"] = oxocarbon.base01
 vim.g["terminal_color_1"] = oxocarbon.base11
 vim.g["terminal_color_2"] = oxocarbon.base14
