@@ -13,8 +13,8 @@ local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = 
 local pumblend = vim.opt.pumblend:get()
 local winblend = vim.opt.winblend:get()
 oxocarbon["pink"] = "#f38ba8"
-oxocarbon["orange"] = "#f9b387"
-oxocarbon["yellow"] = "#f9e2af"
+oxocarbon["orange"] = "#ff6f00"
+oxocarbon["yellow"] = "#ffab91"
 oxocarbon["green"] = "#a6e3a1"
 oxocarbon["blue"] = "#74c7ec"
 oxocarbon["periwinkle"] = "#b4befe"
@@ -103,21 +103,21 @@ vim.api.nvim_set_hl(0, "MatchParen", {fg = oxocarbon.none, bg = oxocarbon.base02
 vim.api.nvim_set_hl(0, "Bold", {fg = oxocarbon.none, bg = oxocarbon.none, bold = true})
 vim.api.nvim_set_hl(0, "Italic", {fg = oxocarbon.none, bg = oxocarbon.none, italic = true})
 vim.api.nvim_set_hl(0, "Underlined", {fg = oxocarbon.none, bg = oxocarbon.none, underline = true})
-vim.api.nvim_set_hl(0, "DiagnosticWarn", {fg = oxocarbon.base14, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "DiagnosticError", {fg = oxocarbon.base10, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "DiagnosticInfo", {fg = oxocarbon.base09, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "DiagnosticHint", {fg = oxocarbon.base04, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", {fg = oxocarbon.base14, bg = oxocarbon.none, undercurl = true})
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", {fg = oxocarbon.base10, bg = oxocarbon.none, undercurl = true})
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", {fg = oxocarbon.base04, bg = oxocarbon.none, undercurl = true})
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", {fg = oxocarbon.base04, bg = oxocarbon.none, undercurl = true})
-vim.api.nvim_set_hl(0, "DiagnosticVirtualWarn", {fg = oxocarbon.base14, bg = "#38343d", italic = true})
-vim.api.nvim_set_hl(0, "DiagnosticVirtualError", {fg = oxocarbon.base10, bg = "#322639", italic = true})
-vim.api.nvim_set_hl(0, "DiagnosticVirtualInfo", {fg = oxocarbon.base04, bg = "#203346", italic = true})
-vim.api.nvim_set_hl(0, "DiagnosticVirtualHint", {fg = oxocarbon.base04, bg = "#273644", italic = true})
-vim.api.nvim_set_hl(0, "HealthError", {fg = oxocarbon.base10, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "HealthWarning", {fg = oxocarbon.base14, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "HealthSuccess", {fg = oxocarbon.base13, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "DiagnosticWarn", {fg = oxocarbon.yellow, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "DiagnosticError", {fg = oxocarbon.red, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "DiagnosticInfo", {fg = oxocarbon.blue, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "DiagnosticHint", {fg = oxocarbon.green, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineWarn", {fg = oxocarbon.yellow, bg = oxocarbon.none, undercurl = true})
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", {fg = oxocarbon.red, bg = oxocarbon.none, undercurl = true})
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineInfo", {fg = oxocarbon.blue, bg = oxocarbon.none, undercurl = true})
+vim.api.nvim_set_hl(0, "DiagnosticUnderlineHint", {fg = oxocarbon.green, bg = oxocarbon.none, undercurl = true})
+vim.api.nvim_set_hl(0, "DiagnosticVirtualWarn", {fg = oxocarbon.yellow, bg = "#38343d", italic = true})
+vim.api.nvim_set_hl(0, "DiagnosticVirtualError", {fg = oxocarbon.red, bg = "#322639", italic = true})
+vim.api.nvim_set_hl(0, "DiagnosticVirtualInfo", {fg = oxocarbon.blue, bg = "#203346", italic = true})
+vim.api.nvim_set_hl(0, "DiagnosticVirtualHint", {fg = oxocarbon.green, bg = "#273644", italic = true})
+vim.api.nvim_set_hl(0, "HealthError", {fg = oxocarbon.red, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "HealthWarning", {fg = oxocarbon.orange, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "HealthSuccess", {fg = oxocarbon.green, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "@comment", {link = "Comment"})
 vim.api.nvim_set_hl(0, "@text.literal.commodity", {fg = oxocarbon.base13, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "@number", {fg = oxocarbon.base09, bg = oxocarbon.none})

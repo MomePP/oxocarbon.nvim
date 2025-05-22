@@ -98,8 +98,8 @@
 
 ;; --- Palette extension ---
 (tset oxocarbon :pink "#f38ba8")
-(tset oxocarbon :orange "#f9b387")
-(tset oxocarbon :yellow "#f9e2af")
+(tset oxocarbon :orange "#ff6f00")
+(tset oxocarbon :yellow "#ffab91")
 (tset oxocarbon :green "#a6e3a1")
 (tset oxocarbon :blue "#74c7ec")
 (tset oxocarbon :periwinkle "#b4befe")
@@ -210,31 +210,31 @@
 
 ;; diagnostics
 
-(custom-set-face! :DiagnosticWarn [] {:fg oxocarbon.base14 :bg oxocarbon.none})
-(custom-set-face! :DiagnosticError [] {:fg oxocarbon.base10 :bg oxocarbon.none})
-(custom-set-face! :DiagnosticInfo [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :DiagnosticHint [] {:fg oxocarbon.base04 :bg oxocarbon.none})
+(custom-set-face! :DiagnosticWarn [] {:fg oxocarbon.yellow :bg oxocarbon.none})
+(custom-set-face! :DiagnosticError [] {:fg oxocarbon.red :bg oxocarbon.none})
+(custom-set-face! :DiagnosticInfo [] {:fg oxocarbon.blue :bg oxocarbon.none})
+(custom-set-face! :DiagnosticHint [] {:fg oxocarbon.green :bg oxocarbon.none})
 (custom-set-face! :DiagnosticUnderlineWarn [:undercurl]
-                  {:fg oxocarbon.base14 :bg oxocarbon.none})
+                  {:fg oxocarbon.yellow :bg oxocarbon.none})
 (custom-set-face! :DiagnosticUnderlineError [:undercurl]
-                  {:fg oxocarbon.base10 :bg oxocarbon.none})
+                  {:fg oxocarbon.red :bg oxocarbon.none})
 (custom-set-face! :DiagnosticUnderlineInfo [:undercurl]
-                  {:fg oxocarbon.base04 :bg oxocarbon.none})
+                  {:fg oxocarbon.blue :bg oxocarbon.none})
 (custom-set-face! :DiagnosticUnderlineHint [:undercurl]
-                  {:fg oxocarbon.base04 :bg oxocarbon.none})
+                  {:fg oxocarbon.green :bg oxocarbon.none})
 (custom-set-face! :DiagnosticVirtualWarn [:italic]
-                  {:fg oxocarbon.base14 :bg "#38343d"})
+                  {:fg oxocarbon.yellow :bg "#38343d"})
 (custom-set-face! :DiagnosticVirtualError [:italic]
-                  {:fg oxocarbon.base10 :bg "#322639"})
+                  {:fg oxocarbon.red :bg "#322639"})
 (custom-set-face! :DiagnosticVirtualInfo [:italic]
-                  {:fg oxocarbon.base04 :bg "#203346"})
+                  {:fg oxocarbon.blue :bg "#203346"})
 (custom-set-face! :DiagnosticVirtualHint [:italic]
-                  {:fg oxocarbon.base04 :bg "#273644"})
+                  {:fg oxocarbon.green :bg "#273644"})
 
 ;; health
-(custom-set-face! :HealthError [] {:fg oxocarbon.base10 :bg oxocarbon.none})
-(custom-set-face! :HealthWarning [] {:fg oxocarbon.base14 :bg oxocarbon.none})
-(custom-set-face! :HealthSuccess [] {:fg oxocarbon.base13 :bg oxocarbon.none})
+(custom-set-face! :HealthError [] {:fg oxocarbon.red :bg oxocarbon.none})
+(custom-set-face! :HealthWarning [] {:fg oxocarbon.orange :bg oxocarbon.none})
+(custom-set-face! :HealthSuccess [] {:fg oxocarbon.green :bg oxocarbon.none})
 
 ;; ledger
 
