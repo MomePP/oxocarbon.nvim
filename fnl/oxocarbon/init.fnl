@@ -156,7 +156,7 @@
 
 (custom-set-face! :HlSearchLens [] {:link "PmenuSel"})
 
-(custom-set-face! :MarkSignHL [] {:fg oxocarbon.blue})
+(custom-set-face! :MarkSignHL [] {:fg oxocarbon.base11})
 
 (custom-set-face! :MiniSurround [] {:link "MatchParen"})
 
