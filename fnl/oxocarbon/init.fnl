@@ -97,7 +97,7 @@
 (local winblend (vim.opt.winblend:get))
 
 ;; --- Palette extension ---
-(tset oxocarbon :pink "#f38ba8")
+(tset oxocarbon :red "#f38ba8")
 (tset oxocarbon :orange "#ff6f00")
 (tset oxocarbon :yellow "#ffab91")
 (tset oxocarbon :green "#a6e3a1")
@@ -116,7 +116,7 @@
 (custom-set-face! :NoiceCmdlineIconFilter [] {:link "lualine_a_command"})
 (custom-set-face! :NoiceSplit [] {:link "Normal"})
 (custom-set-face! :NoiceSplitBorder [] {:link "NoiceSplit"})
-(custom-set-face! :NoiceFormatDate [] {:fg oxocarbon.pink})
+(custom-set-face! :NoiceFormatDate [] {:fg oxocarbon.red})
 (custom-set-face! :NoiceFormatEvent [] {:fg oxocarbon.orange})
 (custom-set-face! :NoiceFormatKind [] {:fg oxocarbon.green})
 
@@ -407,7 +407,7 @@
 
 ;; markdown
 
-(custom-set-face! "@markup.heading.1.markdown" [] {:fg oxocarbon.pink})
+(custom-set-face! "@markup.heading.1.markdown" [] {:fg oxocarbon.red})
 (custom-set-face! "@markup.heading.2.markdown" [] {:fg oxocarbon.orange})
 (custom-set-face! "@markup.heading.3.markdown" [] {:fg oxocarbon.yellow})
 (custom-set-face! "@markup.heading.4.markdown" [] {:fg oxocarbon.green})
