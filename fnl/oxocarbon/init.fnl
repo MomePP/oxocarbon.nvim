@@ -97,7 +97,7 @@
 (local winblend (vim.opt.winblend:get))
 
 ;; --- Palette extension ---
-(tset oxocarbon :red "#ff7eb6")
+(tset oxocarbon :red "#ee5396")
 (tset oxocarbon :orange "#ff6f00")
 (tset oxocarbon :yellow "#ffab91")
 (tset oxocarbon :green "#a6e3a1")
@@ -207,6 +207,7 @@
 (custom-set-face! :Italic [:italic] {:fg oxocarbon.none :bg oxocarbon.none})
 (custom-set-face! :Underlined [:underline]
                   {:fg oxocarbon.none :bg oxocarbon.none})
+(custom-set-face! :Whitespace [] {:fg (blend-hex base00 base06 0.14) :bg oxocarbon.none})
 
 ;; diagnostics
 
