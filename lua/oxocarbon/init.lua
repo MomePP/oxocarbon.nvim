@@ -49,8 +49,8 @@ vim.api.nvim_set_hl(0, "OilPreviewNormal", {bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "OilPreviewBorder", {bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "OilPreviewTitle", {fg = oxocarbon.base00, bg = oxocarbon.base10, bold = true})
 vim.api.nvim_set_hl(0, "LeapBackdrop", {fg = oxocarbon.base03, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "LeapLabel", {fg = oxocarbon.periwinkle, bold = true, nocombine = true})
-vim.api.nvim_set_hl(0, "LeapMatch", {fg = oxocarbon.base04, bold = true, nocombine = true})
+vim.api.nvim_set_hl(0, "LeapLabel", {fg = oxocarbon.lavender, bold = true, nocombine = true})
+vim.api.nvim_set_hl(0, "LeapMatch", {fg = oxocarbon.periwinkle, bold = true, nocombine = true})
 vim.api.nvim_set_hl(0, "RainbowDelimiterRed", {fg = oxocarbon.base10})
 vim.api.nvim_set_hl(0, "RainbowDelimiterBlue", {fg = oxocarbon.base11})
 vim.api.nvim_set_hl(0, "RainbowDelimiterCyan", {fg = oxocarbon.base08})
@@ -64,12 +64,12 @@ vim.api.nvim_set_hl(0, "HlSearchLens", {link = "PmenuSel"})
 vim.api.nvim_set_hl(0, "MarkSignHL", {fg = oxocarbon.base11})
 vim.api.nvim_set_hl(0, "MiniSurround", {link = "MatchParen"})
 vim.g["terminal_color_0"] = oxocarbon.base01
-vim.g["terminal_color_1"] = oxocarbon.base11
-vim.g["terminal_color_2"] = oxocarbon.base14
-vim.g["terminal_color_3"] = oxocarbon.base13
-vim.g["terminal_color_4"] = oxocarbon.base09
-vim.g["terminal_color_5"] = oxocarbon.base15
-vim.g["terminal_color_6"] = oxocarbon.base08
+vim.g["terminal_color_1"] = oxocarbon.base07
+vim.g["terminal_color_2"] = oxocarbon.base11
+vim.g["terminal_color_3"] = oxocarbon.base10
+vim.g["terminal_color_4"] = oxocarbon.base13
+vim.g["terminal_color_5"] = oxocarbon.base14
+vim.g["terminal_color_6"] = oxocarbon.base10
 vim.g["terminal_color_7"] = oxocarbon.base05
 vim.g["terminal_color_8"] = oxocarbon.base03
 vim.g["terminal_color_9"] = oxocarbon.base08
