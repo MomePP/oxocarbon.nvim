@@ -140,8 +140,8 @@
 (custom-set-face! :OilPreviewTitle [:bold] {:fg oxocarbon.base00 :bg oxocarbon.base10})
 
 (custom-set-face! :LeapBackdrop [] {:fg oxocarbon.base03 :bg oxocarbon.none})
-(custom-set-face! :LeapLabel [:bold :nocombine] {:fg oxocarbon.periwinkle})
-(custom-set-face! :LeapMatch [:bold :nocombine] {:fg oxocarbon.base04})
+(custom-set-face! :LeapLabel [:bold :nocombine] {:fg oxocarbon.lavender})
+(custom-set-face! :LeapMatch [:bold :nocombine] {:fg oxocarbon.periwinkle})
 
 (custom-set-face! :RainbowDelimiterRed [] {:fg oxocarbon.base10})
 (custom-set-face! :RainbowDelimiterBlue [] {:fg oxocarbon.base11})
