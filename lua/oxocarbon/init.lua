@@ -62,6 +62,7 @@ vim.api.nvim_set_hl(0, "TreesitterContext", {bg = oxocarbon.none, blend = 0, bol
 vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", {link = "TreesitterContext"})
 vim.api.nvim_set_hl(0, "HlSearchLens", {link = "PmenuSel"})
 vim.api.nvim_set_hl(0, "MarkSignHL", {fg = oxocarbon.base11})
+vim.api.nvim_set_hl(0, "MarkSignNumHL", {fg = oxocarbon.base11, bold = true})
 vim.api.nvim_set_hl(0, "MiniSurround", {link = "MatchParen"})
 vim.g["terminal_color_0"] = oxocarbon.base01
 vim.g["terminal_color_1"] = oxocarbon.base07
