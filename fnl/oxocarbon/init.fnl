@@ -410,14 +410,6 @@
 
 ;; markdown
 
-(custom-set-face! "@markup.heading.1.markdown" [] {:fg oxocarbon.red})
-(custom-set-face! "@markup.heading.2.markdown" [] {:fg oxocarbon.orange})
-(custom-set-face! "@markup.heading.3.markdown" [] {:fg oxocarbon.yellow})
-(custom-set-face! "@markup.heading.4.markdown" [] {:fg oxocarbon.green})
-(custom-set-face! "@markup.heading.5.markdown" [] {:fg oxocarbon.blue})
-(custom-set-face! "@markup.heading.6.markdown" [] {:fg oxocarbon.periwinkle})
-(custom-set-face! "@markup.heading.7.markdown" [] {:fg oxocarbon.lavender})
-
 (custom-set-face! :markdownBlockquote []
                   {:fg oxocarbon.base08 :bg oxocarbon.none})
 (custom-set-face! :markdownBold [] {:link "Bold"})
