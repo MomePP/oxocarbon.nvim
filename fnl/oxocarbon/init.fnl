@@ -253,9 +253,9 @@
 ;; lsp
 
 (custom-set-face! :LspCodeLens [] {:fg oxocarbon.none :bg oxocarbon.base03})
-(custom-set-face! :LspReferenceText [] {:fg oxocarbon.none :bg oxocarbon.base02})
-(custom-set-face! :LspReferenceread [] {:fg oxocarbon.none :bg oxocarbon.base02})
-(custom-set-face! :LspReferenceWrite [] {:fg oxocarbon.none :bg oxocarbon.base02})
+(custom-set-face! :LspReferenceText [:bold] {:fg oxocarbon.none :bg oxocarbon.base02})
+(custom-set-face! :LspReferenceRead [] {:link "LspReferenceText"})
+(custom-set-face! :LspReferenceWrite [] {:link "LspReferenceText"})
 (custom-set-face! :LspSignatureActiveParameter [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 (custom-set-face! :LspInlayHint [:italic] {:fg oxocarbon.base03 :bg oxocarbon.none})
 
