@@ -156,6 +156,14 @@
 (custom-set-face! :RainbowDelimiterOrange [] {:fg oxocarbon.orange})
 (custom-set-face! :RainbowDelimiterViolet [] {:fg oxocarbon.base14})
 
+(custom-set-face! :BlinkPairsRed [] {:fg oxocarbon.base10})
+(custom-set-face! :BlinkPairsBlue [] {:fg oxocarbon.base11})
+(custom-set-face! :BlinkPairsCyan [] {:fg oxocarbon.base08})
+(custom-set-face! :BlinkPairsGreen [] {:fg oxocarbon.base13})
+(custom-set-face! :BlinkPairsYellow [] {:fg oxocarbon.yellow})
+(custom-set-face! :BlinkPairsOrange [] {:fg oxocarbon.orange})
+(custom-set-face! :BlinkPairsViolet [] {:fg oxocarbon.base14})
+
 (custom-set-face! :TreesitterContext [:bold] {:bg oxocarbon.none :blend 0})
 (custom-set-face! :TreesitterContextLineNumber [] {:link "TreesitterContext"})
 
