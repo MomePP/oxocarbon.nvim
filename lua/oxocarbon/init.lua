@@ -105,7 +105,7 @@ vim.api.nvim_set_hl(0, "VisualNOS", {fg = oxocarbon.none, bg = oxocarbon.base02}
 vim.api.nvim_set_hl(0, "TooLong", {fg = oxocarbon.none, bg = oxocarbon.base02})
 vim.api.nvim_set_hl(0, "Debug", {fg = oxocarbon.base13, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Macro", {fg = oxocarbon.base07, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "MatchParen", {fg = oxocarbon.none, bg = oxocarbon.base02, underline = true})
+vim.api.nvim_set_hl(0, "MatchParen", {fg = oxocarbon.none, bg = oxocarbon.base02})
 vim.api.nvim_set_hl(0, "Bold", {fg = oxocarbon.none, bg = oxocarbon.none, bold = true})
 vim.api.nvim_set_hl(0, "Italic", {fg = oxocarbon.none, bg = oxocarbon.none, italic = true})
 vim.api.nvim_set_hl(0, "Underlined", {fg = oxocarbon.none, bg = oxocarbon.none, underline = true})

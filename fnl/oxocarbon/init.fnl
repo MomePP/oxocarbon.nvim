@@ -207,8 +207,7 @@
 (custom-set-face! :TooLong [] {:fg oxocarbon.none :bg oxocarbon.base02})
 (custom-set-face! :Debug [] {:fg oxocarbon.base13 :bg oxocarbon.none})
 (custom-set-face! :Macro [] {:fg oxocarbon.base07 :bg oxocarbon.none})
-(custom-set-face! :MatchParen [:underline]
-                  {:fg oxocarbon.none :bg oxocarbon.base02})
+(custom-set-face! :MatchParen [] {:fg oxocarbon.none :bg oxocarbon.base02})
 (custom-set-face! :Bold [:bold] {:fg oxocarbon.none :bg oxocarbon.none})
 (custom-set-face! :Italic [:italic] {:fg oxocarbon.none :bg oxocarbon.none})
 (custom-set-face! :Underlined [:underline]
